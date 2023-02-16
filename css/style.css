@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "GothamSSm-Book";
+  src: url("../src/GothamSSm-Book.ttf") format("truetype");
+  /* font-style: normal;
+    font-weight: normal; */
+}
+
+@font-face {
+  font-family: "Birthday";
+  src: url("../src/Birthday.otf");
+}
+
+@font-face {
+  font-family: "staywinter";
+  src: url("../src/staywinter.otf");
+}
+
+.texto-prueba {
+  font-family: staywinter;
+  font-size: 36px;
+}
+
+.img-principal {
+  background-image: url(/src/25101.jpg);
+  width: auto;
+  height: 100%;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.swing:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.seccion{
+    /* top | right | bottom | left */
+    border-style: none none solid none;
+    padding-bottom: 1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 1s;
+}
+
+.fadeTop {
+  opacity: 0; 
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.fadeRight {
+  opacity: 0;
+  transform: translate(10vh, 0vh);
+  transition: all 1s;
+}
+
+.fadeLeft {
+  opacity: 0;
+  transform: translate(-10vh, 0vh);
+  transition: all 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.tarjeta:hover {
+  box-shadow: inset 0 0 10px rgba(0, 248, 21, 0.5), 0 0 20px rgba(49, 92, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  
+}
+
+.icon:hover{
+  color: rgb(60, 175, 196);
+  transition-duration: 1s;
+}
+
+.submenu:hover{
+  background-color: darkgrey;
+  color: blue;
+}
+
+.menu:hover{
+  color: coral;
+}
